@@ -16,7 +16,7 @@ To install ``django_atomic_signals``, do yourself a favor and don't use anything
 
 .. code-block:: bash
 
-   $ pip install django_atomic_signals
+   $ pip install django-atomic-signals
 
 Add ``django_atomic_signals`` to the list of installed apps in your settings file:
 
