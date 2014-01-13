@@ -1,0 +1,5 @@
+Django>=1.6.0
+psycopg2
+flake8
+django-nose
+rednose
