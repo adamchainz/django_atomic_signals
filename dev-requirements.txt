@@ -1,5 +1,5 @@
 Django>=1.6.0
 psycopg2
 flake8
-django-nose
+-e git+https://github.com/django-nose/django-nose.git@master#egg=django-nose
 rednose
