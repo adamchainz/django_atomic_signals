@@ -5,7 +5,11 @@ python:
 env:
   - DATABASE="sqlite3"
   - DATABASE="postgresql"
-install: "pip install -r dev-requirements.txt --use-mirrors"
+  - DJANGO_DEP=Django>=1.6.0,<1.7.0
+  - DJANGO_DEP=Django>=1.7.0,<1.8.0
+install:
+  - "pip install --use-mirrors $DJANGO_DEP"
+  - "pip install -r dev-requirements.txt --use-mirrors"
 before_script:
   - psql -c 'CREATE DATABASE djts;' -U postgres
 script: make test
