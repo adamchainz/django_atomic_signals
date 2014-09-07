@@ -9,9 +9,8 @@ packages = [
     'django_atomic_signals',
 ]
 
-
 requires = [
-    'Django>=1.6.0,<1.7',
+    'Django>=1.6.0,<1.8',
 ]
 
 tests_require = [
@@ -22,7 +21,7 @@ tests_require = [
 
 setup(
     name='django-atomic-signals',
-    version='1.0.0',
+    version='1.0.1',
     description='Signals for atomic transaction blocks in Django 1.6+',
     author='Nick Bruun',
     author_email='nick@bruun.co',
@@ -41,7 +40,6 @@ setup(
         'Natural Language :: English',
         'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
     ),
 )
