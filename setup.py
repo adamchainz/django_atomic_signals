@@ -21,7 +21,7 @@ tests_require = [
 
 setup(
     name='django-atomic-signals',
-    version='1.0.1',
+    version='1.1.0',
     description='Signals for atomic transaction blocks in Django 1.6+',
     author='Nick Bruun',
     author_email='nick@bruun.co',
