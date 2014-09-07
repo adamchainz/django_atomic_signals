@@ -8,6 +8,7 @@ env:
   - DJANGO_DEP="Django>=1.7.0,<1.8.0" DATABASE="sqlite3"
   - DJANGO_DEP="Django>=1.7.0,<1.8.0" DATABASE="postgresql"
 install:
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.6 ]]; then pip install --use-mirrors importlib; fi
   - pip install --use-mirrors $DJANGO_DEP
   - pip install -r dev-requirements.txt --use-mirrors
 before_script:
