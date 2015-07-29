@@ -1,10 +1,8 @@
 django_atomic_signals - Signals for atomic transaction blocks in Django
 ============================================================================
 
-.. image:: https://travis-ci.org/nickbruun/django_atomic_signals.png?branch=master
-        :target: https://travis-ci.org/nickbruun/django_atomic_signals
-
-**Note**: `in need of a new maintainer <https://bruun.co/2015/07/22/looking-for-maintainers-for-django-atomic>`_.
+.. image:: https://travis-ci.org/adamchainz/django_atomic_signals.png?branch=master
+        :target: https://travis-ci.org/adamchainz/django_atomic_signals
 
 By default, Django does not provide signals for when a database transaction is entered or left. As per various Django tickets, there seems to be no interest in adding this, which has led to a variety of third party solutions. However, due to the changes to transaction handling in Django 1.6, these solutions are no longer functional.
 
