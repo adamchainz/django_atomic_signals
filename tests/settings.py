@@ -32,4 +32,5 @@ INSTALLED_APPS = (
 DEBUG = True
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
-NOSE_ARGS = ['--verbosity=2', '--detailed-errors', '--rednose']
+
+MIDDLEWARE_CLASSES = ()
