@@ -3,14 +3,14 @@ python:
   - "2.7"
 env:
   - DJANGO_DEP="Django>=1.6.0,<1.7.0" DATABASE="sqlite3"
-  - DJANGO_DEP="Django>=1.6.0,<1.7.0" DATABASE="postgresql"
+  - DJANGO_DEP="Django>=1.6.0,<1.7.0" DATABASE="mysql"
   - DJANGO_DEP="Django>=1.7.0,<1.8.0" DATABASE="sqlite3"
-  - DJANGO_DEP="Django>=1.7.0,<1.8.0" DATABASE="postgresql"
+  - DJANGO_DEP="Django>=1.7.0,<1.8.0" DATABASE="mysql"
 install:
   - pip install --use-mirrors $DJANGO_DEP
   - pip install -r dev-requirements.txt --use-mirrors
 before_script:
-  - psql -c 'CREATE DATABASE djts;' -U postgres
+  - mysql -e 'create database if not exists test;'
 script: make test
 notifications:
   email: false
