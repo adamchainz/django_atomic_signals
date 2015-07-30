@@ -16,7 +16,7 @@ elif database_implementation == 'mysql':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'django_mysql',
+            'NAME': 'test',
             'USER': '',
             'PASSWORD': '',
             'HOST': '',
@@ -34,11 +34,8 @@ SECRET_KEY = '_uobce43e5osp8xgzle*yag2_16%y$sf*5(12vfg25hpnxik_*'
 INSTALLED_APPS = (
     'django_atomic_signals',
     'tests',
-    'django_nose',
 )
 
 DEBUG = True
-
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 MIDDLEWARE_CLASSES = ()
