@@ -18,10 +18,14 @@ tests_require = [
     'django-nose',
 ]
 
+with open('README.rst') as readme_file:
+    readme = readme_file.read()
+
 setup(
     name='django-atomic-signals',
     version='1.1.0',
     description='Signals for atomic transaction blocks in Django 1.6+',
+    long_description=readme,
     author='Nick Bruun',
     author_email='nick@bruun.co',
     url='http://bruun.co/',
